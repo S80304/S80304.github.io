@@ -124,20 +124,28 @@
         .btn-lab {
             display: inline-block;
             margin-top: 15px;
-            padding: 10px 20px;
+            padding: 12px 24px;
             background-color: var(--color-accent);
             color: #ffffff !important;
             border-radius: 8px;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             text-align: center;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             text-shadow: none !important;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .btn-lab:hover {
             background-color: var(--color-accent-light);
-            transform: translateY(-1px);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-lab:active {
+            transform: translateY(0);
         }
 
         @media (max-width: 768px) {
@@ -216,7 +224,7 @@
                     <em>Analyzing the texture and thermal profiles of <strong>Kuih Lapis</strong> to optimize ingredient ratios and processing methods.</em>
                 </p>
             </div>
-            <a href="https://github.com/S80304/lab-timer-app" target="_blank" class="btn-lab">Try My Lab Timer App</a>
+            <a href="https://s80304.github.io/lab-timer-app/index.html" target="_blank" class="btn-lab">Try My Lab Timer App</a>
         </div>
 
         <div class="bento-card card-hobby">
